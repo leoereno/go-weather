@@ -33,7 +33,8 @@ export async function getForecast (coordinates) {
     const response = await fetch(url);
     if(response.ok) {
         const responseObject = await response.json();
-        return responseObject.hourly.temperature_2m;
+        //console.log(responseObject);
+        return [responseObject.hourly.temperature_2m, responseObject.hourly.weather_code];
     }
     return null;
 }

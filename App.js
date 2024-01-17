@@ -20,8 +20,8 @@ import { InputProvider } from './src/contexts/InputContext';
 
 function App(){
   return(
-    <SafeAreaView>
-      <StatusBar />
+    <SafeAreaView style={{flex: 1}}>
+      <StatusBar style='auto'/>
       <ForecastProvider>
         <InputProvider>
           <Home />
@@ -30,6 +30,8 @@ function App(){
     </SafeAreaView>
   );
 }
+
+
 
 
 export default App;

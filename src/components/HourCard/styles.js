@@ -6,10 +6,10 @@ export const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: 'black',
         flexDirection: 'row',
-        padding: 15
+        padding: 15,
     },
     text: {
         fontSize: 18,
-        margin: 15
+        margin: 15,
     }
 })
