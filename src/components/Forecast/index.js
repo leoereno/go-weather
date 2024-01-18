@@ -14,6 +14,7 @@ export default function Forecast ({forecast, city, weatherCodes}){
                 renderItem={({item, index}) => <HourCard time={formatHour(index)} temp={item} weatherCode={weatherCodes[index]}/>}
                 ListHeaderComponent={<Text>{`Forecast for ${city} on ${dayString(new Date().getDay())}`}</Text>}
                 contentContainerStyle={{justifyContent: 'center', paddingBottom: 150, marginTop: 20}}
+                ListHeaderComponentStyle={{alignItems: 'center'}}
                 ListFooterComponent={<ClearButton text="Home"/>}
             />
         </View>  

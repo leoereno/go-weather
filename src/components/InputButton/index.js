@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity, Text  } from "react-native";
 import {stylesFunction} from './style'
 
-export default function InputButton ({ title, type, action }) {
+export default function InputButton ({ title, type, action, disabled }) {
 
     const styles = stylesFunction(type);
 
@@ -10,6 +10,7 @@ export default function InputButton ({ title, type, action }) {
         <TouchableOpacity
         onPress={() => {action()}}
         style={styles.button}
+        disabled={disabled}
       >
         <Text>{title}</Text>
       </TouchableOpacity>

@@ -20,17 +20,24 @@ import { InputProvider } from './src/contexts/InputContext';
 
 function App(){
   return(
-    <SafeAreaView style={{flex: 1}}>
-      <StatusBar style='auto'/>
-      <ForecastProvider>
-        <InputProvider>
-          <Home />
-        </InputProvider>
-      </ForecastProvider>     
-    </SafeAreaView>
+    <View style={styles.container}>
+
+        <StatusBar style='auto'/>
+        <ForecastProvider>
+          <InputProvider>
+            <Home />
+          </InputProvider>
+        </ForecastProvider>     
+
+    </View>
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  }
+})
 
 
 

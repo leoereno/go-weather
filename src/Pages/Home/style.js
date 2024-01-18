@@ -27,7 +27,7 @@ export const stylesFunction = () => {
         padding: 2,
       },
       btnContainer: {
-        flexDirection: "row",
+        //flexDirection: "row",
         margin: 5
       },
       forecastList: {
